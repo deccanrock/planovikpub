@@ -36,6 +36,21 @@ body{
 	width:inherit
 }
 
+
+.verticalbtn {
+    -webkit-transform: rotate(270deg); /* Safari and Chrome */
+    -moz-transform: rotate(270deg);   /* Firefox */
+    -ms-transform: rotate(270deg);   /* IE 9 */
+    -o-transform: rotate(270deg);   /* Opera */
+    transform: rotate(270deg);
+}
+
+.scrolltop{
+	position:fixed;
+	width:22%;   
+	height:60px;
+}
+
 @media (max-width:767px){
 	.main-container.container:before{
 		-webkit-box-shadow:none;
@@ -1824,6 +1839,14 @@ pre.prettyprint{
 		border-right:1px solid rgba(255,255,255,.4)
 	}
 
+}
+
+#activitymodal .modal-dialog{
+    max-height: 700px;
+    max-width: 730px;
+    height:100%;
+    width:100%;
+    overflow: visible; 
 }
 
 .container-fluid>.navbar-buttons,.container>.navbar-buttons{
@@ -18698,8 +18721,15 @@ input.typeahead.scrollable~.tt-dropdown-menu{
 	transition:max-width .15s linear 0s,max-height 0s linear .15s,padding 0s linear .15s,border-width 0s linear .15s
 }
 
+select.hideearrow {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+}
+
 .ace-settings-box.open{
-	max-width:320px;
+	max-width:420px;
 	max-height:1000px;
 	padding:0 14px;
 	border-width:2px;
