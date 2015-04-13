@@ -941,6 +941,12 @@ pre.prettyprint{
 	margin:12px 0
 }
 
+.customerror {
+	display: none;
+	color: #A94442
+}
+
+
 [class*=vspace-]{
 	display:none
 }
@@ -1843,7 +1849,7 @@ pre.prettyprint{
 
 #activitymodal .modal-dialog{
     max-height: 700px;
-    max-width: 730px;
+    max-width: 980px;
     height:100%;
     width:100%;
     overflow: visible; 
@@ -18729,7 +18735,7 @@ select.hideearrow {
 }
 
 .ace-settings-box.open{
-	max-width:420px;
+	max-width:480px;
 	max-height:1000px;
 	padding:0 14px;
 	border-width:2px;
