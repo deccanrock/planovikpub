@@ -8,9 +8,25 @@ body{
 	min-height:100%;
 	padding-bottom:0;
 	font-family:'Open Sans';
-	font-size:13px;
+	font-size:12px;
 	color:#393939;
 	line-height:1.5
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: 6px 12px;
+	height: 30px;
+	font-size: 12px;
+    line-height: 1.42857;
+    color: #555;
+    background-color: #FFF;
+    background-image: none;
+    border: 1px solid #CCC;
+    border-radius: 4px;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset;
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
 }
 
 .main-container:before{
@@ -1848,8 +1864,8 @@ pre.prettyprint{
 }
 
 #activitymodal .modal-dialog{
-    max-height: 700px;
-    max-width: 980px;
+    max-height: 650px;
+    max-width: 870px;
     height:100%;
     width:100%;
     overflow: visible; 
@@ -6473,7 +6489,7 @@ button.btn:active{
 .btn.btn-app.btn-xs>.ace-icon{
 	display:block;
 	font-size:24px;
-	line-height:24px;
+	line-height:18px;
 	margin:0
 }
 
@@ -7879,7 +7895,8 @@ button.btn:active{
 
 label{
 	font-weight:400;
-	font-size:14px
+	font-size:12px;
+	margin-bottom:2px
 }
 
 .form-group>label[class*=col-]{
@@ -7903,7 +7920,8 @@ input[type=color],input[type=date],input[type=datetime-local],input[type=datetim
 	background-color:#fff;
 	border:1px solid #d5d5d5;
 	padding:5px 4px 6px;
-	font-size:14px;
+	font-size:12px;
+	height:30px;
 	font-family:inherit;
 	-webkit-box-shadow:none!important;
 	box-shadow:none!important;
@@ -17765,7 +17783,7 @@ th[aria-selected=true] .ui-jqgrid-sortable{
 
 input.tt-hint,input.tt-query,input.typeahead{
 	min-width:200%;
-	font-size:14px;
+	font-size:12px;
 	border:1px solid #CCC;
 	border-radius:0;
 	outline:0
