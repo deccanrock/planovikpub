@@ -6,11 +6,105 @@
 
 /* Global Styles */
 
+* {
+   margin: 0;
+}
+
 html,
 body {
-    width: 100%;
-    height: 100%;
+	margin:0;
+	padding:0;
+	height:100%;
+	overflow-x: hidden;
 }
+
+.wrapper {
+	min-height: 100%;
+	margin-bottom: -20px;
+}
+
+.wrapper:after {
+  content: "";
+  display: block;
+}
+
+.footer, .wrapper:after {
+    height: 20px; 
+}
+
+#header {
+	padding:10px;
+}
+
+.header_container {
+    height: 82px;	
+	z-index: 99;
+	background: #eee none repeat scroll 0% 0%;
+	position: relative;
+}
+
+.header_container .logo {
+	z-index: 1;
+	margin-top: 20px;
+	margin-left: 20px;
+	position: relative;	
+}
+
+.header_container .loginblock {
+	margin-top: 20px;
+	position: relative;	
+}
+
+.header_container_small {
+	z-index: 99;
+	background: #eee none repeat scroll 0% 0%;
+	position: relative;
+	box-shadow: 0px 1.5px 1.5px -2px rgba(0, 0, 0, 0.32);	
+}
+
+.header_container_small .logo {
+	z-index: 1;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	position: relative;	
+}
+
+.loginblock .form-control {
+    display: block;
+    width: 108%;
+    height: 26px;
+    padding: 3px 12px;
+    font-size: 14px;
+    line-height: 1.42857;
+    color: #555;
+    background-color: #FFF;
+    background-image: none;
+    border: 1px solid #CCC;
+    border-radius: 4px;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset;
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+}
+
+.loginblock .loginbutton {
+    width: 100%;
+    text-align: center;
+    padding: 3px 0px;
+    font-size: 12px;
+	color: #FFF;
+    background-color: #047AFF;
+    background-image: linear-gradient(to bottom, #047AFF 0px,  #0369cc 100%);
+    border: 1px solid  #488fd7;
+}
+
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
+
+#content {
+	padding-bottom:100px; /* Height of the footer element */
+}
+
 
 body {
     font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -131,7 +225,7 @@ hr.small {
     z-index: 1;
     position: fixed;
     top: 0;
-    right: 0;
+    right: 20px;
 }
 
 #sidebar-wrapper.active {
@@ -167,7 +261,7 @@ hr.small {
 	color: #A94442;
 }
 
-#signupdlg .modal-dialog {
+#signupdlg  .modal-dialog, #logindlg  .modal-dialog {
     width: 520px;
 }
 
@@ -179,7 +273,7 @@ hr.small {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
 }
 
-#signupdlg .modal-dialog .modal-content .signup-header {
+#signupdlg  .modal-dialog .modal-content .signup-header, #logindlg  .modal-dialog .modal-content .signup-header {
     position: relative;
     padding: 15px;
     color: #FFF;
@@ -208,16 +302,16 @@ hr.small {
 }
 
 
-#signupdlg .modal-dialog .modal-content .signup-header .text {
+#signupdlg  .modal-dialog .modal-content .signup-header .text, #logindlg  .modal-dialog .modal-content .signup-header .text {
     width: 355px;
 }
 
-#signupdlg .modal-dialog .modal-content .signup-header .text .title {
+#signupdlg  .modal-dialog .modal-content .signup-header .text .title, #logindlg  .modal-dialog .modal-content .signup-header .text .title {
     margin: 5px 0px;
     font-size: 30px;
 }
 
-#signupdlg .modal-dialog .modal-content .signup-header .text .subtitle {
+#signupdlg  .modal-dialog .modal-content .signup-header .text .subtitle, #logindlg  .modal-dialog .modal-content .signup-header .text .subtitle {
     margin: 0px;
     font-size: 14px;
     font-weight: 700;
@@ -225,13 +319,13 @@ hr.small {
     color: #B3DAA5;
 }
 
-#signupdlg .modal-dialog .modal-content .signup-header img {
+#signupdlg  .modal-dialog .modal-content .signup-header img, #logindlg  .modal-dialog .modal-content .signup-header img {
     position: absolute;
     right: 0px;
     bottom: 0px;
 }
 
-#signupdlg .modal-dialog .modal-content .modal-body {
+#signupdlg  .modal-dialog .modal-content .modal-body, #logindlg  .modal-dialog .modal-content .modal-body {
     width: 100%;
     margin: 0px auto;
     padding: 30px 55px 15px;
@@ -246,7 +340,7 @@ hr.small {
     padding: 12px 0px;
 }
 
-#signupdlg .modal-dialog .modal-content .modal-body .or {
+#signupdlg .modal-dialog .modal-content .modal-body .or, #logindlg .modal-dialog .modal-content .modal-body .or  {
     margin: 15px 0px;
 }
 
@@ -300,7 +394,7 @@ hr.small {
 }
 
 
-#signupdlg .modal-dialog .modal-content .modal-body .terms {
+#signupdlg, #logindlg .modal-dialog .modal-content .modal-body .terms {
     margin-top: 10px;
 }
 
@@ -396,6 +490,6 @@ hr.small {
 
 /* Footer */
 
-footer {
+.footer-pad {
     padding: 100px 0;
 }
