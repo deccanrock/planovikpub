@@ -10,7 +10,8 @@ body{
 	font-family:'Open Sans';
 	font-size:12px;
 	color:#393939;
-	line-height:1.5
+	line-height:1.5;
+	overflow-x: hidden;
 }
 
 .form-control {
@@ -243,7 +244,7 @@ h6.block{
 }
 
 .img_logo {
-    padding-top:4px
+    padding-top:10px
 }
 
 .loggedout_menubar {margin:0 auto;width:980px}
@@ -5054,10 +5055,9 @@ body.mob-safari .sidebar.sidebar-fixed{
 
 .footer{
 	background-color:#E9EAED;
-	padding-top:15px;
-	height:0;
+	height:40px;
 	width:0;
-	padding-top:40px;
+	margin-top:20px;
 }
 
 .footer .footer-inner{
@@ -16664,7 +16664,8 @@ img.editable-click:hover{
 }
 
 .ui-jqgrid .ui-jqgrid-view,.ui-jqgrid .ui-paging-info,.ui-jqgrid .ui-pg-selbox,.ui-jqgrid .ui-pg-table{
-	font-size:13px
+	font-size:11px;
+	margin-right: 20px;
 }
 
 .ui-jqgrid .ui-jqgrid-title{
@@ -16678,12 +16679,10 @@ img.editable-click:hover{
 }
 
 .ui-jqgrid-view>.ui-jqgrid-titlebar{
-	height:40px;
-	line-height:24px;
 	color:#FFF;
 	background:#307ecc;
 	padding:0;
-	font-size:15px
+	font-size:13px
 }
 
 .ui-jqgrid tr.jqgrow.ui-row-rtl td:last-child{
@@ -16695,7 +16694,6 @@ img.editable-click:hover{
 	background-color:#eff3f8;
 	border:1px solid #D3D3D3;
 	border-width:1px 0 0 1px;
-	line-height:15px;
 	font-weight:700;
 	color:#777;
 	text-shadow:none
@@ -16760,8 +16758,8 @@ img.editable-click:hover{
 
 .ui-jqgrid .ui-jqgrid-pager{
 	line-height:15px;
-	height:55px;
-	padding-top:3px!important;
+	height:30px;
+	padding-top:0px!important;
 	padding-bottom:5px!important;
 	background-color:#eff3f8!important;
 	border-bottom:1px solid #E1E1E1!important;
@@ -16795,7 +16793,6 @@ img.editable-click:hover{
 }
 
 .ui-jqgrid .ui-pager-control{
-	height:50px;
 	position:relative;
 	padding-left:9px;
 	padding-right:9px
@@ -16878,7 +16875,7 @@ img.editable-click:hover{
 
 .ui-jqgrid-sortable{
 	padding-left:4px;
-	font-size:13px;
+	font-size:11px;
 	color:#777;
 	font-weight:700
 }
